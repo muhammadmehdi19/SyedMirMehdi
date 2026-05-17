@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Timezones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-globe"></i> Digital Clock</h1>
+            <p class="subtitle">Current Time Across the World</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search or add timezone..." class="search-input">
+                <button id="searchBtn" class="search-btn"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="format-toggle">
+                <button class="format-btn active" id="format24">24h</button>
+                <button class="format-btn" id="format12">12h</button>
+            </div>
+        </div>
+
+        <div class="suggestions" id="suggestions" style="display: none;">
+            <!-- Suggestions will appear here -->
+        </div>
+
+        <div class="clocks-container" id="clocksContainer">
+            <!-- Clock cards will be added here -->
+        </div>
+
+        <button class="reset-btn" id="resetBtn"><i class="fas fa-redo"></i> Reset to Default</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
